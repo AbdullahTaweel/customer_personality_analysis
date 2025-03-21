@@ -99,81 +99,72 @@ My hypothesis fall under the following focus areas:
 * H21: Customers who buy sweets are also more likely to buy fruits.
 * H22: Gold product buyers are more likely to respond to premium campaigns than discount campaigns.
 
-Note: I will try to cover all as much as the data allows. 
+Power BI Dashboard interactively allows the user to test these hypothesises and extract answers to the marketing campagins strategy. 
 
 ## Project Plan
 * The project management board will include detailed tasks breakdown and this section will be updated in daily sprints.
-* Outline the high-level steps taken for the analysis.
-* How was the data managed throughout the collection, processing, analysis and interpretation steps?
-* Why did you choose the research methodologies you used?
+* Data preperation and cleaning.
+* Data transformation and ETL.
+* Clustering with K-means.
+* Prediction with Random Forest.
+* Power BI Dashboard Design.
 
-## The rationale to map the business requirements to the Data Visualisations
-* List your business requirements and a rationale to map them to the Data Visualisations
+## business requirements to the Data Visualisations
+* Understanding the relation between the customers' profiles and their spending activities.
+* Understanding the customers' preferences regarding their purchase behaviour and their products consumption.
+* Understanding the effeciency of the previous marketing campagins in attracting definite part of our customers.
+* Understanding the loyality indecators of the customers and our ability to retain or reengage them.
 
 ## Analysis techniques used
-* List the data analysis methods used and explain limitations or alternative approaches.
-* How did you structure the data analysis techniques. Justify your response.
-* Did the data limit you, and did you use an alternative approach to meet these challenges?
-* How did you use generative AI tools to help with ideation, design thinking and code optimisation?
+* Raw data were studied and re-built to become suitable for the bussiness requirements.
+* Exploratory Data Analysis (EDA): Basic and advanced visualizations were used to extract deeper insights from the data, such as pie, columns with line, stacked columns, scatter plot, multi pie charts, and heatmaps for correlations.
+* Descriptive, comparetive, and predictive analysis were applied to the data.
+* The data was limited and unrelated which didn't allow prediction quality, and the clustering was difficult.
+* Generative AI was used to assist the comprehension of the data features and convert it to the nost insightful version.
 
 ## Ethical considerations
-* Were there any data privacy, bias or fairness issues with the data?
-* How did you overcome any legal or societal issues?
+* The data contained the IDs of the customers and their birth year which I found unnecessary for the analysis, so I dropped any unnecessary data throughout the work.
+* As I beleive the data is public for practicing and does not refer to exact company, the data has no legal issues.
 
 ## Dashboard Design
-* List all dashboard pages and their content, either blocks of information or widgets, like buttons, checkboxes, images, or any other item that your dashboard library supports.
-* Later, during the project development, you may revisit your dashboard plan to update a given feature (for example, at the beginning of the project you were confident you would use a given plot to display an insight but subsequently you used another plot type).
-* How were data insights communicated to technical and non-technical audiences?
-* Explain how the dashboard was designed to communicate complex data insights to different audiences. 
+* Power BI allowed me flexibility in covering all the hypothesises in a super interactive way.
+* The dashboard consists of three sections up to down as It delves deeper into the features and their relation. The three sections are easily destinguishable as I used separate colour pallets in each.
+* The slicer tool allows the used to navigate through the different aspects of the data and retreive visual representations from all the visuals. For instance, if we are interested in analysing only the active customers who are married and have graduation education level, we can follow a linear path from up to down and have all the information needed.
+
+### Dashboard screenshot:
+![Screenshot 2025-03-21 135108](https://github.com/user-attachments/assets/a24b2009-9755-489a-8bc5-8fe2572c5de9)
+
 
 ## Unfixed Bugs
-* Please mention unfixed bugs and why they were not fixed. This section should include shortcomings of the frameworks or technologies used. Although time can be a significant variable to consider, paucity of time and difficulty understanding implementation are not valid reasons to leave bugs unfixed.
-* Did you recognise gaps in your knowledge, and how did you address them?
-* If applicable, include evidence of feedback received (from peers or instructors) and how it improved your approach or understanding.
+* There is a bug in the slicer in the Power BI dashboard wich I couldn't fix bit it is not harming the effecincy of the dashboard. When selecting the false values after clicking on select all then select true, selecting the false will cause the visual to become blank. To avoid that, you need to click on select all again and click on the false button afterward.
 
 ## Development Roadmap
-* What challenges did you face, and what strategies were used to overcome these challenges?
-* What new skills or tools do you plan to learn next based on your project experience? 
+* Selecting the dataset was the hardest part for me as I wanted to select a dataset that could be seen as a real life project. Even though my chosen dataset is small and might not be perfect for skills showcasing, I beleive it reflects my willingness to undertake data analytics tasks from new companies.
+* A step by step approach was followed and on the way I implemented the intended best practices.
+* Interactive dashboard was created on Power BI
+* Future enhancements on the dataset should be performed and considering generating more instances using generative AI tools is an option. 
 
 ## Deployment
-### Heroku
+Power BI online and Git-Hub + Vs Code
+Power BI: https://app.powerbi.com/links/6260JhdbHk?ctid=c233c072-135b-431d-af59-35e05babf941&pbi_source=linkShare 
 
-* The App live link is: https://YOUR_APP_NAME.herokuapp.com/ 
-* Set the runtime.txt Python version to a [Heroku-20](https://devcenter.heroku.com/articles/python-support#supported-runtimes) stack currently supported version.
-* The project was deployed to Heroku using the following steps.
-
-1. Log in to Heroku and create an App
-2. From the Deploy tab, select GitHub as the deployment method.
-3. Select your repository name and click Search. Once it is found, click Connect.
-4. Select the branch you want to deploy, then click Deploy Branch.
-5. The deployment process should happen smoothly if all deployment files are fully functional. Click now the button Open App on the top of the page to access your App.
-6. If the slug size is too large then add large files not required for the app to the .slugignore file.
-
-
-## Main Data Analysis Libraries
-* Here you should list the libraries you used in the project and provide an example(s) of how you used these libraries.
-
+## Tools & Technologies Used
+* Pandas
+* Matplotlib
+* Sci-kit learn
+* Numpy
+* Seaborn
+* K-mean Clustering
+* Random Forest classifier for prediction
+* Jupyter Notebbok
+* VsCode
+* Power BI
 
 ## Credits 
 
 * The dataset is made available on Kaggle through the following link: https://www.kaggle.com/datasets/imakash3011/customer-personality-analysis 
 * Generative AI tools such as ChatGPT, Copilot coding assistant, and Geminin are effectively employed to achieve excellency
 * The course content and the training team instruction and support are guiding the deleivery of this Project
-* In this section, you need to reference where you got your content, media and extra help from. It is common practice to use code from other repositories and tutorials, however, it is important to be very specific about these sources to avoid plagiarism. 
-* You can break the credits section up into Content and Media, depending on what you have included in your project. 
-
-### Content 
-
-- The text for the Home page was taken from Wikipedia Article A
-- Instructions on how to implement form validation on the Sign-Up page was taken from [Specific YouTube Tutorial](https://www.youtube.com/)
-- The icons in the footer were taken from [Font Awesome](https://fontawesome.com/)
-
-### Media
-
-- The photos used on the home and sign-up page are from This Open-Source site
-- The images used for the gallery page were taken from this other open-source site
-
-
 
 ## Acknowledgements (optional)
 * Thank the people who provided support through this project. Vasi and Neil, the student support team, and My colleagues.
